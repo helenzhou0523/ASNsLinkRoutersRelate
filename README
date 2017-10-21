@@ -1,0 +1,34 @@
+Name: Bingjie-Zhou
+UCSD PID: A13711806
+Date: November,12nd,2016
+File: README
+
+
+Correlate data in two files
+
+Introduction:
+  
+  We have two input files which record the link between two ASNs and the router
+  number of each ASN. We need to calculate the degree of each ASN which is 
+  number of links that each point has in first input file. We need to filter  
+  out the ASNs that included both files and output their number and degree and
+  router number line by line in output file
+
+Input files:
+
+  links.txt: recording link and relationship of each pair of ASNs
+             Relationships:0-siblings
+                           1-AS1 is customer of AS2
+                           2-AS1 is provider of AS2
+                           3-settlement-free peers
+  routers.txt: recording the router number of each ASN
+
+Output file:
+
+  output: recording the degree and router number of ASNs that appear in both
+          input files
+
+          including three columns:
+          ASN   degrees   router-number
+
+          totally 17592 rows
